@@ -1,0 +1,57 @@
+@mixin titleH1{
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%;
+text-transform: uppercase;
+	strong{
+		font-weight: 900;
+	}
+	@media screen and (min-width:767px) {
+		font-size: 54px;
+	}
+}
+@mixin titleH2{
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 120%; /* 57.6px */
+	letter-spacing: 0.48px;
+	strong{
+		font-weight: 900;
+	}
+	@media screen and (min-width:767px) {
+		font-size: 48px;
+	}
+}
+@mixin titleH3{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 120%; /* 28.8px */
+	letter-spacing: 0.48px;
+	@media screen and (min-width:768px) {
+		font-size: 24px;
+	}
+}
+@mixin titleH4{
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0.25px;
+	@media screen and (min-width:768px) {
+		font-size: 25px;
+	}
+}
+@mixin titleH5{
+color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+@media screen and (min-width:768px) {
+	font-size: 20px;
+}
+}
+

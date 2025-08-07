@@ -1,0 +1,36 @@
+.connect{
+	&__container{
+		display: flex;
+		flex-direction: column-reverse;
+		@media screen and (min-width:1024px) {
+			flex-direction: row;
+		}
+	}
+	&__info{
+		display: flex;
+		flex-direction: column;
+		padding: 48px 32px;
+		@media screen and (min-width:1024px) {
+			width: 34%;
+		}
+		h2{
+			margin-bottom: 109px;
+			@include titleH2;
+		}
+		.contact{
+			margin-bottom: 32px;
+		}
+	}
+	&__frame{
+		max-height: 520px;
+		height: 100%;
+			@media screen and (min-width:1024px) {
+			width: 66%;
+		}
+		iframe{
+			max-width: 100%;
+			max-height: 100%;
+			width: 100%;
+		}
+	}
+}
