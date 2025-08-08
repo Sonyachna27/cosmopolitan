@@ -74,7 +74,8 @@
 			gap: 24px;
 			padding-top: 24px;
 			border-top: 1px solid #1E1E1E;
-			h3{
+			h3,
+			h4{
 				font-size: 24px;
 				font-style: normal;
 				font-weight: 800;
@@ -85,20 +86,7 @@
 					letter-spacing: 0.35px;
 				}
 			}
-			// p{
-			// 		color: #1E1E1E;
-			// 		font-size: 16px;
-			// 		font-style: normal;
-			// 		font-weight: 400;
-			// 		line-height: 150%;
-			// 		letter-spacing: 0.16px;
-			// 		opacity: .8;
-					
-			// 		@media screen and (min-width:768px) {
-			// 			font-size: 18px;
-			// 		letter-spacing: 0.18px;
-			// 		}
-			// 	}
+
 			ul{
 			display: flex;
 			flex-direction: column;

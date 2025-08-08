@@ -399,6 +399,7 @@ form button[type=submit] {
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
+  font-weight: 900;
 }
 .breadcrumbs__container h1 strong {
   font-weight: 900;
@@ -947,6 +948,8 @@ form button[type=submit] {
   font-weight: 900;
   line-height: 120%; /* 57.6px */
   letter-spacing: 0.48px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .detailing__title h2 strong {
   font-weight: 900;
@@ -1461,7 +1464,8 @@ form button[type=submit] {
   padding-top: 24px;
   border-top: 1px solid #1E1E1E;
 }
-.services__item-bottom-wrap h3 {
+.services__item-bottom-wrap h3,
+.services__item-bottom-wrap h4 {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
@@ -1469,7 +1473,8 @@ form button[type=submit] {
   letter-spacing: 0.24px;
 }
 @media screen and (min-width: 768px) {
-  .services__item-bottom-wrap h3 {
+  .services__item-bottom-wrap h3,
+  .services__item-bottom-wrap h4 {
     font-size: 35px;
     letter-spacing: 0.35px;
   }

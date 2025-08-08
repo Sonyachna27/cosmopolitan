@@ -324,6 +324,7 @@ form{
 		gap: 4px;
 		h1{
 			@include titleH1;
+			font-weight: 900;
 		}
 	}
 	&__wrap{
