@@ -1,0 +1,51 @@
+.article{
+	h2{
+		@include titleH2;
+		margin-bottom: 24px;
+	}
+	p{
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%; /* 27px */
+		letter-spacing: 0.16px;
+		opacity: .8;
+		&:not(:nth-last-of-type(1)){
+			margin-bottom: 24px;
+		}
+		@media screen and (min-width:768px) {
+			font-size: 18px;
+			letter-spacing: 0.18px;
+		}
+	}
+	ul{
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			margin-bottom: 24px;
+			li{
+				position: relative;
+				padding-left: 40px;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 150%; /* 30px */
+				letter-spacing: 0.18px;
+				@media screen and (min-width:768px) {
+					font-size: 20px;
+					letter-spacing: 0.2px;
+				}
+				
+				&:before{
+					content: '';
+					width: 31px;
+					height: 31px;
+					position:absolute;
+					top: 0;
+					left: 0;
+					background: url('../images/arrow-list.svg') center center  / cover no-repeat;
+				}
+			
+			}
+			}
+}

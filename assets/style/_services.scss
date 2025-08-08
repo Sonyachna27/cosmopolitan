@@ -16,9 +16,11 @@
 		&__img{
 			max-height: 420px;
 			object-fit: cover;
+			height: 100%;
+			aspect-ratio: 1;
 			@media screen and (min-width:768px) {
 			width: 32.4%;
-			aspect-ratio: 1;
+			
 		}
 		}
 		&__info{
@@ -83,19 +85,20 @@
 					letter-spacing: 0.35px;
 				}
 			}
-			p{
-					color: #1E1E1E;
-					font-size: 16px;
-					font-style: normal;
-					font-weight: 400;
-					line-height: 150%;
-					letter-spacing: 0.16px;
-					opacity: .8;
-					@media screen and (min-width:768px) {
-						font-size: 18px;
-					letter-spacing: 0.18px;
-					}
-				}
+			// p{
+			// 		color: #1E1E1E;
+			// 		font-size: 16px;
+			// 		font-style: normal;
+			// 		font-weight: 400;
+			// 		line-height: 150%;
+			// 		letter-spacing: 0.16px;
+			// 		opacity: .8;
+					
+			// 		@media screen and (min-width:768px) {
+			// 			font-size: 18px;
+			// 		letter-spacing: 0.18px;
+			// 		}
+			// 	}
 			ul{
 			display: flex;
 			flex-direction: column;
@@ -103,21 +106,31 @@
 			li{
 				position: relative;
 				padding-left: 40px;
-				span{
-					display: inline-block;
-					margin-bottom: 8px;
-					font-size: 18px;
+				color: #1E1E1ECC;
+				font-size: 16px;
 					font-style: normal;
-					font-weight: 800;
-					line-height: 150%; /* 30px */
-					letter-spacing: 0.18px;
-					text-transform: uppercase;
+					font-weight: 400;
+					line-height: 150%;
+					letter-spacing: 0.16px;
 					@media screen and (min-width:768px) {
-						font-size: 20px;
-						letter-spacing: .2px;
+						font-size: 18px;
+					letter-spacing: 0.18px;
 					}
+
+				strong, span{
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 150%; /* 30px */
+				letter-spacing: 0.18px;
+				display: block;
+				color: $--Main-colors-Black;
+				margin-bottom: 10px;
+				@media screen and (min-width:768px) {
+					font-size: 20px;
+					letter-spacing: 0.2px;
 				}
-				
+				}
 				&:before{
 					content: '';
 					width: 31px;
@@ -127,14 +140,24 @@
 					left: 0;
 					background: url('../images/arrow-list.svg') center center  / cover no-repeat;
 				}
-			
 			}
 			}
 			img{
 				max-height: 400px;
 				max-width: 100%;
-				width: 100%;
+				width: fit-content;
 				object-fit: cover;
+			}
+			hr {
+				height: 1px;
+				width: 100%;
+				border: none;
+				background-color: #1E1E1E;
+			}
+			.btn{
+				max-width: fit-content;
+				padding: 20px 24px;
+				gap: 12px;
 			}
 		}
 	}

@@ -117,7 +117,6 @@ const handlePopup = () => {
 					});
 			});
 	};
-
 	const closePopup = () => {
 			document.querySelectorAll('[data-close="close"]').forEach(element => {
 					element.addEventListener('click', () => {
