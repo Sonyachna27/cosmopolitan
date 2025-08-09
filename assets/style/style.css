@@ -1133,6 +1133,10 @@ form button[type=submit] {
   background-color: #919396;
   cursor: not-allowed;
 }
+.work__arrows .work-button-prev.swiper-button-lock,
+.work__arrows .work-button-next.swiper-button-lock {
+  display: none;
+}
 
 .connect__container {
   display: flex;

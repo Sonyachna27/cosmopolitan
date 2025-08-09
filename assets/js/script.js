@@ -129,7 +129,6 @@ const handlePopup = () => {
 	closePopup();
 };
 
-
 const workSliderInit = () =>{
 	const workSliderWrap = document.querySelector('.workSlider');
 	if(!workSliderWrap) return;
