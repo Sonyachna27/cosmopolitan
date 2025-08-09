@@ -136,6 +136,9 @@
 				max-width: 100%;
 				width: fit-content;
 				object-fit: cover;
+				@supports (-webkit-touch-callout: none) {
+						width: auto; 
+				}
 			}
 			hr {
 				height: 1px;

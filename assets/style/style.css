@@ -1215,12 +1215,23 @@ form button[type=submit] {
     text-align: center;
   }
 }
+@supports (-webkit-touch-callout: none) {
+  .footer__logo {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .footer__logo .logo {
   max-width: inherit;
   max-height: -moz-fit-content;
   max-height: fit-content;
   width: 100%;
   height: 100%;
+}
+@supports (-webkit-touch-callout: none) {
+  .footer__logo .logo {
+    height: auto;
+  }
 }
 .footer__logo p {
   font-size: 18px;
@@ -1537,6 +1548,11 @@ form button[type=submit] {
   width: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@supports (-webkit-touch-callout: none) {
+  .services__item-bottom-wrap img {
+    width: auto;
+  }
 }
 .services__item-bottom-wrap hr {
   height: 1px;
