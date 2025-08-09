@@ -1215,23 +1215,17 @@ form button[type=submit] {
     text-align: center;
   }
 }
-@supports (-webkit-touch-callout: none) {
-  .footer__logo {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
 .footer__logo .logo {
   max-width: inherit;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
   width: 100%;
   height: 100%;
+  max-height: 75px;
 }
-@supports (-webkit-touch-callout: none) {
-  .footer__logo .logo {
-    height: auto;
-  }
+.footer__logo .logo img {
+  max-height: inherit;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 .footer__logo p {
   font-size: 18px;
@@ -1544,15 +1538,8 @@ form button[type=submit] {
 .services__item-bottom-wrap img {
   max-height: 400px;
   max-width: 100%;
-  width: -moz-fit-content;
-  width: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@supports (-webkit-touch-callout: none) {
-  .services__item-bottom-wrap img {
-    width: auto;
-  }
 }
 .services__item-bottom-wrap hr {
   height: 1px;
