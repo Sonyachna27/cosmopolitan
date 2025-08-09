@@ -1467,6 +1467,7 @@ form button[type=submit] {
   gap: 24px;
   padding-top: 24px;
   border-top: 1px solid #1E1E1E;
+  align-items: flex-start;
 }
 .services__item-bottom-wrap h3,
 .services__item-bottom-wrap h4 {
