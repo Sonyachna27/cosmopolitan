@@ -13,6 +13,9 @@
 		@media screen and (min-width:768px) {
 			flex-direction: row;
 		}
+		&__top{
+			gap: 34px;
+		}
 		&__img{
 			max-height: 420px;
 			object-fit: cover;

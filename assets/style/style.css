@@ -129,6 +129,7 @@ body {
   font-weight: 800;
   line-height: normal;
   width: 100%;
+  text-transform: uppercase;
   background-color: #1E1E1E;
   position: relative;
   z-index: 1;
@@ -542,6 +543,9 @@ form button[type=submit] {
     transform: translateY(0px);
   }
 }
+.header__bottom .btn {
+  text-transform: none;
+}
 .header__bottom .logo {
   max-width: 205px;
   max-height: -moz-fit-content;
@@ -570,10 +574,6 @@ form button[type=submit] {
 }
 .header__menu .header__contact span, .header__menu .header__contact a {
   color: inherit;
-}
-.header__menu .header__contact hr {
-  width: 100%;
-  height: 1px;
 }
 .header__wrap {
   display: flex;
@@ -728,6 +728,10 @@ form button[type=submit] {
   .hero__content h1 {
     width: 75%;
   }
+}
+.hero__content .btn {
+  max-width: 200px;
+  width: 100%;
 }
 .hero__img {
   width: 100%;
@@ -1141,6 +1145,7 @@ form button[type=submit] {
 .connect__container {
   display: flex;
   flex-direction: column-reverse;
+  border: 1px solid #919396;
 }
 @media screen and (min-width: 1024px) {
   .connect__container {
@@ -1155,10 +1160,17 @@ form button[type=submit] {
 @media screen and (min-width: 1024px) {
   .connect__info {
     width: 34%;
+    border-right: 1px solid #919396;
+  }
+}
+@media screen and (max-width: 1023.9px) {
+  .connect__info {
+    border-top: 1px solid #919396;
   }
 }
 .connect__info h2 {
   margin-bottom: 109px;
+  text-transform: uppercase;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -1177,17 +1189,23 @@ form button[type=submit] {
   margin-bottom: 32px;
 }
 .connect__frame {
-  max-height: 520px;
-  height: 100%;
+  height: auto;
 }
 @media screen and (min-width: 1024px) {
   .connect__frame {
     width: 66%;
   }
 }
+@media screen and (max-width: 1023.9px) {
+  .connect__frame {
+    max-height: 520px;
+    aspect-ratio: 1/0.75;
+  }
+}
 .connect__frame iframe {
   max-width: 100%;
   max-height: 100%;
+  height: 100%;
   width: 100%;
 }
 
@@ -1408,6 +1426,9 @@ form button[type=submit] {
     flex-direction: row;
   }
 }
+.services__item__top {
+  gap: 34px;
+}
 .services__item__img {
   max-height: 420px;
   -o-object-fit: cover;
@@ -1626,7 +1647,7 @@ form button[type=submit] {
 .error {
   padding: 202px 0;
   position: relative;
-  background: url("../images/error.png") center center/cover no-repeat;
+  background: url("../images/error-img.jpg") center center/cover no-repeat;
 }
 .error:before {
   content: "";
@@ -1679,6 +1700,19 @@ form button[type=submit] {
     font-size: 20px;
     letter-spacing: 0.2px;
   }
+}
+.error__container .btn {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+  padding: 26px 32px;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.error__container .btn:after {
+  width: 24px;
+  height: 24px;
 }
 
 .popup {
